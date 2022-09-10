@@ -1,0 +1,36 @@
+
+Control Statement
+Python Exercises-while-loop
+
+1- Print First 10 natural numbers using while loop.
+
+Answer:
+
+
+----------------------------------------------------------
+2- Ask user to enter a number less than 5 to exit the loop.
+
+Answer:
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3- You want a user to enter any number between 100 and 500. We will keep asking the user to enter a correct input until he/she enters the number within a given range.
+number = int(input('Enter any number between 100 and 500 '))
+
+Answer:
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+4-Guess the total grades AND MCAT score to get admitted to Medical school. Both should be met to get admitted, grades>=98 AND mcat>=95
+
+Answer:
+
+
+------------------------------------------------------------------------------------------------------
+5- You want a user to enter any number and print even and odd numbers between 1 to the entered number.
+
+Answer:
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6- You want a user to enter a string may contain digits. Write a while loop to display each character from a string and if a character is number then stop the loop.

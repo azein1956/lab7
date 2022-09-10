@@ -1,0 +1,6 @@
+# Write your code here
+word = input("word to convert: ")
+count = int(input("How many letters at the end of the word should be converted? "))
+start_str = word[:-count].lower()
+end_str = word[-count:].upper()
+print(start_str + end_str)

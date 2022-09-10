@@ -1,0 +1,58 @@
+#The reason for nesting is when we have to evaluate for logics AND, OR
+#OR logic gets executed when nesting the False value. This procedure works for all computer languages
+#and Spreadsheet conditional statement
+#Nesting if statement executing OR logic, example-1
+#test>=90 A grade, OR test>=80 B grade, OR test>=70 C grade, OR test>=60 D grade,OR Failed
+if test >= 90:
+  print("Grade is A")
+else:
+  if test >= 80:
+    print("Grade is B")
+  else:
+    if test >= 70:
+      print("Grade is C")
+    else:
+      if test >= 60:
+        print("Grade is D")
+      else:
+        print("Failed")
+-----------------------------------------------------------------
+#The reason for nesting is when we have to evalute for logics AND, OR
+#OR logic gets executed when nesting the False value. This procedure works for all computer languages
+#and Spreadsheet conditional statement
+#Nesting if statement executing OR logic, example-2
+#test<60 F grade, OR test<70 C grade, OR test<80 B grade, OR test<90 B grade,OR A grade    
+test = int(input("Enter your test grades: "))
+if test < 60:
+  print("Grade is F")
+else:
+  if test < 70:
+    print("Grade is D")
+  else:
+    if test < 80:
+      print("Grade is C")
+    else:
+      if test < 90:
+        print("Grade is B")
+      else:
+        print("Grade is A")
+-------------------------------------------------------
+#OR logic gets executed when nesting the False value. This procedure works for all computer languages
+#and Spreadsheet conditional statement
+#Nesting if statement executing OR logic, example-3   
+state = input("Enter your state of residence: ")
+stateStripped = state.strip().lower()
+if stateStripped == "oklahoma":
+  print("You live in the Sooner State")
+else:
+  if stateStripped == "texas": #OR Texas
+    print("You live in the Lone Star State")
+  else:
+    if stateStripped == "new york":#OR New York 
+      print("You live in the Empire State")
+    else:
+      if stateStripped == "florida":#OR Florida...
+        print("You live in the Sunshine State")
+      else:
+        print("Not in the list!")
+

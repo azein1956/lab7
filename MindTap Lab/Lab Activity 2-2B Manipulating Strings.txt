@@ -1,0 +1,21 @@
+# Write your code here
+sentence = input("Sentence: ")
+substring = input("Word to look for in sentence: ")
+sentence_no_WS = sentence.strip().lower()
+substring_no_WS = substring.strip().lower()
+count = sentence_no_WS.count(substring_no_WS)
+print(f"There are {count} occurrences of '{substring_no_WS}' in the sentence.")
+-----------------------------------------------------------
+OR:
+---
+# Write your code here
+sentence = input("Sentence: ").strip().lower()
+substring = input("Word to look for in sentence: ").strip().lower()
+count_substr = sentence.count(substring)
+print(f"There are {count_substr} occurrences of '{substring}' in the sentence.")
+------------------------------------------------------------
+
+
+#You cannot end a sentence with because because because is a conjunction.
+#That that is is that that is not is not. Is that it? It is.
+#She said said is said said but I said no said is said said.

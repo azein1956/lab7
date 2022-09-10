@@ -1,0 +1,73 @@
+
+Control Statement
+Python Exercises-while-loop - Solution
+
+1- Print First 10 natural numbers using while loop.
+# program 1: Print first 10 natural numbers
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+-----------------------------------------------------
+2- Ask user to enter a number less than 5 to exit the loop.
+
+num = int(input("Enter a numbr less than 5 to exit loop: "))
+while num > 5:
+    num = int(input("Enter a numbr less than 5 to exit loop: "))
+else:
+    print("Good try!")
+-------------------------------------------------------
+3- You want a user to enter any number between 100 and 500. We will keep asking the user to enter a correct input until he/she enters the number within a given range.
+
+number = int(input('Enter any number between 100 and 500: '))
+if number < 100:
+    number = 501
+while number > 500:
+    number = int(input("Enter a numbr between 100 amd 500: "))
+    if number < 100:
+        number = 501
+else:
+    print("Got it, Bye")
+---------------------------------------------------------------------------------
+4-Guess the total grades AND MCAT score to get admitted to Medical school. Both should be met to get admitted, grades>=98 AND mcat>=95
+
+#Guess the admission to Med school,
+#Grades should be greater than 98 AND MCAT score is greater than 95.
+grades = int(input('Enter total grades: '))
+mcat_score = int(input('Enter MCAT score: '))
+while grades < 98:
+        print('\n Did not guess the grades ')
+        grades = int(input('Please guess total grades: '))
+while mcat_score < 95: #AND MCAT should not be be less than 95
+    print("\n Did not guess the MCAT scores")
+    mcat_score = int(input('Please guess MCAT score:  '))
+else:
+        print("\n Your guess is correct.")
+print("Good Bye")
+
+-----------------------------------------------------------
+5- You want a user to enter any number and print even and odd numbers between 1 to the entered number.
+
+n = int(input('Please Enter Number '))
+while n > 0:
+    # check even and odd
+    if n % 2 == 0:
+        print(n, 'is a even number')
+    else:
+        print(n, 'is a odd number')
+    # decrease number by 1 in each iteration
+    n = n - 1
+--------------------------------------------------------------------------
+6- You want a user to enter a string may contain digits. Write a while loop to display each character from a string and if a character is number then stop the loop.
+string = input("Enter a string: ")
+size = len(string)
+i = 0
+# iterate loop till the last character
+while i < size:
+    # break loop if current character is number
+    if string[i].isdecimal():
+        break;
+    # print current character
+    print(string[i], end=" ") #use end=" " tp print string horizontaly
+    i = i + 1
+--------------------------------------------------------------------------------

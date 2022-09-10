@@ -1,0 +1,20 @@
+# Write your code here
+name =input("Enter your name: ")
+password = input("Enter your password: ")
+while password != "Pas$Word":    
+    print("Incorrect password, try again...")
+    password = input("Enter your password: ")
+print("Welcome back, ", name)
+----------------------------------------------------
+# Write your code here
+password = "Pas$Word"
+name = input("Enter your name: ")
+answer = input("Enter your password: ")
+while answer != password:
+    print("Incorrect password, try again...")
+    answer = input("Enter your password: ")           
+else:
+        print("Welcome back, ", name)
+print("Bye!")
+-------------------------------------------------------
+

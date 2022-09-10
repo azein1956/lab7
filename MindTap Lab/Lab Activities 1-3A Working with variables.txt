@@ -1,0 +1,9 @@
+# Write your code here
+miles = 60
+hours = 3
+knots = miles / 1.15078
+feet = miles * 5280
+seconds = hours * 3600
+print("The speed in knots is: ", knots / hours)
+print("The speed in miles per hour is: ", miles / hours)
+print("The speed in feet per second is: ", feet / seconds)

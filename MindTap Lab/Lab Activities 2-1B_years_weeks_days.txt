@@ -1,0 +1,5 @@
+days = int(input("Days you have been driving: "))
+print("You have been driving for: ")
+print("Years: ", days // 365)
+print("Weeks: ", days % 365 // 7)
+print("Days: ", days % 365 % 7)

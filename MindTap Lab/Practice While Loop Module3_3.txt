@@ -1,0 +1,31 @@
+name = input("Enter your name: ")
+password = input("Enter your password: ")
+while password != "Pas$Word":
+    print("Incorrect password, try again... ")
+    password = input("Enter your password: ")
+else: #You may skip else by indenting next print statement below its starting while statement.
+    print("Welcome back, ", name)
+--------------------------------------------------------
+
+#Practice While loop
+import random
+userNum = int(input("Enter a number between 1 and 10: "))
+print("Trying to guess your number...")
+myGuess = random.randint(1, 10)
+while myGuess != userNum:
+    print("I guessed", myGuess, "...trying again")
+    myGuess = random.randint(1, 10)
+print("I guessed it! Your number was", myGuess)
+--------------------------------------------------
+import random
+userNum = int(input("Enter a number between 1 and 10: "))
+print("Trying to guess your number...")
+myGuess = random.randint(1, 10)
+if userNum <= 10:
+    while myGuess != userNum:
+        print("I guessed", myGuess, "...trying again")
+        myGuess = random.randint(1, 10)    
+    print("I guessed it! Your number was", myGuess)
+else:
+    print(f"Your number {userNum} should be less than 10")
+------------------------------------------------------------------

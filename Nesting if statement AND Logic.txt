@@ -1,0 +1,37 @@
+#The reason for nesting is when we have to evaluate for logics AND, OR 
+#AND logic gets executed when nesting the True value. This procedure works for all computer languages
+#and Spreadsheet conditional statement
+#Nesting if statement executing AND logic, example-1
+#if test>=70 AND final>=90 you passed
+test = int(input("Enter your test grades: "))
+final = int(input("Enter your final exam grades: "))
+if test >= 70:
+  if final >= 90:
+    print("You passed!")
+  else:
+    print("Final exam is less than 90%, Failed!")
+else:
+  print("Grades are less than 70%, Failed!")
+print("Bye!")
+------------------------------------------------------------
+#AND logic gets executed when nesting the True value. This procedure works for all computer languages
+#and Spreadsheet conditional statement
+#Nesting if statement executing AND logic, example-2
+#if test>=70 AND final>=90 AND attendance >=50 you passed
+test = int(input("Enter your test grades: "))
+final = int(input("Enter your final exam grades: "))
+attendance = int(input("Enter attendance average: "))
+if test >= 70: # if test is greater or equal to 70
+  if final >= 90: # AND final is greater or equal to 90
+    if attendance >= 50: # AND attendance is greater or equal to 50
+      print("You passed!")
+    else:
+      print("Failed attendance")
+  else:
+    print("Final exam is less than 90%, Failed!")
+else:
+  print("Grades are less than 70%, Failed!")
+print("Bye!")
+------------------------------------------------------
+
+

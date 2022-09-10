@@ -1,0 +1,170 @@
+
+Python Exercises-IF Statement-Solution
+
+1- Print First 10 natural numbers using while loop
+
+# program 1: Print first 10 natural numbers
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+-----------------------------------------------------
+2- Write a program to check whether a person is eligible for
+voting or not. (accept age from user)
+
+age=int(input("Enter your age"))
+if age >=18:
+   print("Eligible for voting")
+else:
+   print("not eligible for voting")
+-------------------------------------------------------------
+3- Write a program to check whether a number entered by user is even or odd.
+
+num=int(input("Enter your age"))
+if num%2==0:
+   print("Number is Even")
+else:
+   print("Number is Odd")
+----------------------------------------------------------------------
+4- Write a program to check whether a number is divisible by 7 or not.
+
+num=int(input("Enter your age"))
+if num%7==0:
+   print("Number is divisible")
+else:
+   print("Number is not divisible")
+----------------------------------------------------------------------
+5- Write a program to display "Hello" if a number entered by user is
+a multiple of five , 
+otherwise print "Bye".
+
+num=int(input("Enter your age"))
+if num%5==0:
+   print("Hello")
+else:
+   print("Bye")
+---------------------------------------------------------------------
+6- Write a program to check whether a number (accepted from user)
+is positive or negative.
+
+num = int(input("Enter first number"))
+if num > 0 :
+    print("Number is positive")
+else:
+    print("Number is negative")
+----------------------------------------------------------------------
+7- Write a program to calculate the electricity bill (accept number
+of unit from user)
+according to the following criteria:
+             Unit                                        Price  
+First 100 units                                       no charge
+Next 100 units                                        Rs 5 per unit
+After 200 units                                       Rs 10 per unit
+(For example if input unit is 350 than total bill amount is Rs2000)
+
+amount = 0
+num_of_units = int(input("Enter number of electric unit: "))
+if num_of_units <= 100:
+    print("You pay: ", amount)
+else:
+    if num_of_units <= 200:
+        amount = (num_of_units-100) * 5
+        print("You pay: ", amount)
+    else:
+        if num_of_units > 200:
+            amount = 500 + (num_of_units - 200) * 10
+            print("You pay: ", amount)
+---------------------------------------------------------------------
+8- Write a program to display the last digit of a number.
+(hint : any number % 10 will return the last digit)
+num=int(input("Enter any number"))
+print("Last digit of number is ",num%10)
+-------------------------------------------------------------------------
+9- Write a program to accept a number from 1 to 7 and display the name of
+the day like 1 for Sunday,
+2 for Monday and so on. Use nesting if statement,
+
+day_num=int(input("Enter any number between 1 to 7 : "))
+if day_num == 1:
+    print("Sunday")
+else:
+    if day_num == 2:
+        print("Monday")
+    else:
+        if day_num == 3:
+            print("Tuesday")
+        else:
+            if day_num == 4:
+                print("Wednesday")
+            else:
+                if day_num == 5:
+                    print("Thurday")
+                else:
+                    if day_num == 6:
+                        print("Friday")
+                    else:
+                        if day_num == 7:
+                            print("Saturday")
+                        else:
+                            print("Number should bebetween 1 and 7")
+-----------------------------------------------------------------------
+10- Write a program to find eligibility for tax break for
+person AND his wife if both
+are over 66 years old. Use nesting if statement.
+
+husband_age = int(input("Enter your age: "))
+wife_age = int(input("Enter spouse age: "))
+if husband_age > 66:
+    if wife_age >65:
+        print("Eligible for Tax break")
+    else:
+        print("Not eligible. Wife's age is less than 66")
+else:
+    print("Not eligible. Husband's age is less than 66")         
+
+--------------------------------------------------------------------
+11- Write a program to find if student is eligible for Finacial Aid,
+he/she should meets all criterias.
+HINT: Need to create 5 variables, citizenship, wages, credit hours,
+gpa, and attendance.
+
+#Student elegibe for Financial Aid if he/she meets all 5 criterias:
+#Yes for citizenship or permenant resident
+#Wages are less than 50k from previous year
+#Enrolled in 12 credit hours or more in the current semester
+#Total GPA is greater than or equal to 2.0
+#Attendance average is greater than or equal to 95
+citizenship = input("Enter Yes or No if you are a US citizen or permenant resident: ")
+wages = int(input("Enter total wage from your income tax last year: "))
+credit_hours = int(input("Enter total credit hours you are taking this semester: "))
+gpa = float(input("Enter current transcript total GPA: "))
+attendance = int(input("Enter average attendance: "))
+citizenship_strip = citizenship.strip().lower()
+if citizenship_strip == "yes":
+    if wages < 50000:
+        if gpa >= 2.0:
+            if credit_hours >= 12:
+                if attendance >= 95:
+                    print("You are eligible for Financial Aid")
+print('\n')
+if attendance < 95 : 
+    print("Not eligible, attendance is less than 95.")
+if credit_hours < 12:
+    print("Not eligible, you are enrolled in less than 12 credit hours.")
+if gpa < 2.0:
+    print("Not eligible, Transcript GPA is less than 2.0") 
+if wages > 50000:
+    print("Not eligible, wages are greater than 50k.")
+if citizenship_strip != "yes":
+    print("Not eligible, Not a US citizen or permenant resident.")
+
+-----------------------------------------------------------------------------------
+12- Write a program to check whether a number entered is three digit number or not.
+
+number = input("Enter any number: ")
+num_length = len(number)
+if num_length != 3:
+    print("Number is not 3 digits")
+else:
+    print("Number is 3 digits")
+-----------------------------------------------------------------------------
